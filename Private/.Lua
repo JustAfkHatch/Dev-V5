@@ -22,25 +22,12 @@ local Tabs = {
 local LeftGroupBox = Tabs.Changelogs:AddLeftGroupbox('Changelogs')
 LeftGroupBox:AddLabel('For All The Scripts!')
 LeftGroupBox:AddLabel('🟢 Working! 🟠 In Development 🔴 Patched!')
-
+LeftGroupBox:AddLabel('---------------------------------')
 LeftGroupBox:AddLabel('Small Changes V4.4.1')
-LeftGroupBox:AddLabel('Removed Some Scripts')
-LeftGroupBox:AddLabel('Maybe Getting BloxFruit Done Tommorow :(')
-LeftGroupBox:AddLabel('Adding ScriptHub Tommorow YAY!! More Script:Unknown')
-LeftGroupBox:AddLabel('---------------------------------')
-LeftGroupBox:AddLabel('Small Changes V4.4.5')
-LeftGroupBox:AddLabel('(+) Added Zeerox To Universal (Only Arsenal And PF)')
-LeftGroupBox:AddLabel('---------------------------------')
-LeftGroupBox:AddLabel('Huge Changes V4.4')
-LeftGroupBox:AddLabel('(+) Added Bloxfruit 42 + Scripts')
-LeftGroupBox:AddLabel('(+) Revamped Things')
-LeftGroupBox:AddLabel('(+) Released Da Hood')
-LeftGroupBox:AddLabel('---------------------------------')
-LeftGroupBox:AddLabel('Big Changes V4.3')
-LeftGroupBox:AddLabel('(+) Added Legends Of Speed')
-LeftGroupBox:AddLabel('(+) Added 7 Scripts To Legends Of Speed')
-LeftGroupBox:AddLabel('(+) Added DaHood!')
-LeftGroupBox:AddLabel('(+) Added 15 scripts to DaHood')
+LeftGroupBox:AddLabel('(-) Removed Some Scripts From Sections')
+LeftGroupBox:AddLabel('(+) Revamped A Bunch Of Things')
+LeftGroupBox:AddLabel('(+) Got Done With BloxFruit Scripts')
+LeftGroupBox:AddLabel('(+) Adding ScriptHub Tommorow')
 
 local LeftGroupBox = Tabs.PSX:AddLeftGroupbox('------- Pet Simulator X ---------')
 local MyButton = LeftGroupBox:AddButton('🟢 TR1V5 Software (Exclusive)', function()
@@ -152,14 +139,6 @@ local MyButton = RightGroupBox:AddButton('🟢 Proxo Hub (Common)', function()
     loadstring(game:HttpGet"https://raw.githubusercontent.com/sinnx32/prx/main/Petsim")()
 end)
 MyButton:AddTooltip('Might Removed This Script If Isnt Updating')
-local MyButton = RightGroupBox:AddButton('🟢 Key Board For Mobile (Moving This To ScriptHub)', function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
-end)
-MyButton:AddTooltip('This Is For Mobile Users')
-local MyButton = RightGroupBox:AddButton('🟢 JSBR (Moving This To ScriptHub)', function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZXC09321/my-script/main/Script.txt",true))()
-end)
-MyButton:AddTooltip('This Is For Mobile Users')
 
 LeftGroupBox:AddLabel('Keybind'):AddKeyPicker('KeyPicker', {
     Default = 'None', -- String as the name of the keybind (MB1, MB2 for mouse buttons)  
@@ -234,10 +213,10 @@ local MyButton = LeftGroupBox:AddButton('🟢 Phantom Hub', function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
 end)
 MyButton:AddTooltip('Best Features,By the way Not Up To Date')
-local MyButton = LeftGroupBox:AddButton('🟢 LK Hub', function()
-    loadstring(game:HttpGet("https://lkhub.net/s/loader.lua"))()
+local MyButton = LeftGroupBox:AddButton('🟢 SoggyWare', function()
+    loadstring(game:HttpGet("https://soggyhubv2.vercel.app"))()
 end)
-MyButton:AddTooltip('Worst Features,And Has Key System Link and By the way Not Up To Date')
+MyButton:AddTooltip('Great Features')
 local MyButton = LeftGroupBox:AddButton('🟢 PeepWare', function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/NexIsHot/PeepWare/main/Login.lua"))()
 end)
@@ -413,8 +392,326 @@ end)
 MyButton:AddTooltip('Has Very Op Features')
 
 local LeftGroupBox = Tabs.BF:AddLeftGroupbox('---------- Blox Fruit -----------')
+local MyButton = LeftGroupBox:AddButton('🟢BloxFruit Gui', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xDepressionx/Free-Script/main/BloxFruit.lua"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢Saza Hub', function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/ScriptLoader.saza")()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢Tuper Hub', function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/TUPERX/TUPERX/Main/MenuBF/README.md'))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢2x Hub', function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/NeaPchX2/2XHUB-UPDBIG/main/README.md', true))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢Sxnumz Hub', function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/sxnumz/Script/main/SxnumzHubFree.txt'))();
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢BlazeX Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/WindowsXp12/BlxzeRBLX/main/BLxzeHub.lua"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢Ripper Hub', function()
+    	_G.Color = Color3.fromRGB(52, 190, 255)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/NEWBF.lua"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢Fusion Hub', function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/script/main/fusion1'))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢MrMaxNaja', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrMaxNaJaEz/New-MrMaxNaJa-NaJa/main/README.md"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢East Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Brineeee/EastHub/main/lua"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢Chiba', function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KindIhave/ChibaHuB/main/Chiba-BF.txt'))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢One X Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xOne2/One-x-HUB/main/README.md"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢Zen Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/BloxFruit", true))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢Putaya Hub', function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Putaya/HITBOXKAK/main/PutayaFree"), true))();
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢Evil Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Natthawat69/EvilHub-FREE/main/Script.lua"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢ATR Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/ATR",true))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢Meta Ware', function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/x2FIWz/SCRIPT/main/MOBILE/METAWARE.lua'))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢Bonk Hub', function()
+    	_G.Color = Color3.fromRGB(255,0,0)
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Toonza555/BonkHub/main/Bonkxx.txt'))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢Thunder Z', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-05/HUB/main/Simple"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = LeftGroupBox:AddButton('🟢SMZ Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/free-script/main/SMZHUBv2BETA"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+
 
 local RightGroupBox = Tabs.BF:AddRightGroupbox('---------- Blox Fruit -----------')
+local MyButton = RightGroupBox:AddButton('🟢Resin Farm', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/sasaff94/ResinKaitan/main/README.md"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Mark Hub', function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/dhsHESsm'))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Hxllow Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/master/hxllow"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Foxy Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/x2foxy/FoxyHubFreescript/main/Freescript"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Black Trap', function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/BdvUGb2q"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Netna Hub', function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/NinoGod/NetnaYay/8d21ce23346c500c93bb8b4a71f7791e4058a70b/startload.lua'))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Power Hub', function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/natoppo044/modzcaster/main/POWERX.lua"),true))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Shadow Hub', function()
+    	_G.Script_Modes = "Normal_Wcq"
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Shadow-Trash/Loader/main/Loader.lua"))();
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Maru Hub', function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/joi-droid/MaruHubBF/main/GOHANSSJ3'))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Whale Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/x2SPETER/x2SPETER/main/BloxFruits.lua"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Miki Hub', function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/NeaPchX2/Miki-HubTH-/main/README.md', true))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Some X Hub', function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/2rmDLJiE"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Strike Hub', function()
+    	getgenv().Color = Color3.fromRGB(0, 128, 255)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/StormSKz12/StirkeHub1/main/Gameincluded"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢SazX Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GooD1020/big-upd/main/README.md"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Magma Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/accountnop/magmaisgay/main/magma", true))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Evo X', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/2"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢String Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/OPPV01/DEX/main/Protected.lua.txt", true))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Master Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢CattusWare', function()
+    loadstring(game:HttpGet'https://raw.githubusercontent.com/ao-0/djd/main/astro_hub.lua')()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Owo Hub', function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/slightten/ouwHub/main/ouwHub'))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+
+local LeftGroupBox = Tabs.SH:AddLeftGroupbox('----------- Universals ----------')
+local MyButton = LeftGroupBox:AddButton('🟢Dex Explorer', function()
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
+end)
+local MyButton = LeftGroupBox:AddButton('🟢Fe Animations', function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/RubyBoo4life/Scripts/main/animations.vis'))()
+end)
+local MyButton = LeftGroupBox:AddButton('🟢Inf yield', function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+local MyButton = LeftGroupBox:AddButton('🟢Cmd X', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+end)
+local MyButton = LeftGroupBox:AddButton('🟢Fates Admin', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+end)
+local MyButton = LeftGroupBox:AddButton('🟢Reviz Admin', function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/pyzjWNhk'),true))()
+end)
+local MyButton = LeftGroupBox:AddButton('🟢R6 Admin', function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/CKbPg9NC", true))()
+end)
+LeftGroupBox:AddLabel('------- Speed Of Legends --------')
+local MyButton = LeftGroupBox:AddButton('🟢TR1V5 Software', function()
+        game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "TR1V5 Key Copied!", Icon = "rbxassetid://10470552407", Duration = 5})
+	setclipboard("UwuuwlIIIIlIIIIl_6164871262816436247394884")
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/TR1V5/TR1V5-Software-V4/main/Main"))()
+end)
+local MyButton = LeftGroupBox:AddButton('🟢Vestra Hub', function()
+    	getgenv().key = "Vstra.V5_73b395ff54e72348"
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xandudiscord/vestra/main/loader.lua"))()
+end)
+local MyButton = LeftGroupBox:AddButton('🟢Extreme Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ExtremeAntonis/KeySystemUI/main/KeySystemUI-Obfuscated.lua"))()
+end)
+local MyButton = LeftGroupBox:AddButton('🟢Proxima Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+end)
+local MyButton = LeftGroupBox:AddButton('🟢King Hub V2', function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/King-Hub-v2/main/Loader.lua'))()
+end)
+local MyButton = LeftGroupBox:AddButton('🟢Legends Of Speed Gui', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ReeAndArceus/Legends-Of-Speed-Gui/main/Gui"))() 
+end)
+local MyButton = LeftGroupBox:AddButton('🟢Project Hydra', function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/MrBruhPlayz/ProjectHydra/main/Loader"), true)()
+end)
+local MyButton = LeftGroupBox:AddButton('🟢Rolly Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XRoLLu/Rolly_Hub/main/open-source-trash-loader.exe.yeah"))()
+end)
+LeftGroupBox:AddLabel('------- Mow The Lawn --------')
+local MyButton = LeftGroupBox:AddButton('🟢SoggyWare', function()
+    loadstring(game:HttpGet("https://soggyhubv2.vercel.app"))()
+end)
+local MyButton = LeftGroupBox:AddButton('🟢Ultra Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/Ultra-Hub/main/Mow-The-Lawn"))()
+end)
+
+local RightGroupBox = Tabs.SH:AddRightGroupbox('--- Build A Boat For Treasure ---')
+local MyButton = RightGroupBox:AddButton('🟢Vynixius', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Build%20A%20Boat%20For%20Treasure/Script.lua"))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢Zeerox Hub', function()
+    loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/ZeeroxHub/main/Loader.lua')()
+end)
+local MyButton = RightGroupBox:AddButton('🟢Vestra Hub V5', function()
+        getgenv().key = "Vstra.V5_73b395ff54e72348"
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xandudiscord/vestra/main/loader.lua"))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢Project Meow', function()
+    loadstring(game:HttpGet"https://rawscripts.net/raw/Project-Meow_421")()
+end)
+local MyButton = RightGroupBox:AddButton('🟢Thunder Z', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-05/HUB/main/Script"))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢MonkeHub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeHub/main/Loader.lua"))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢420 Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Bluntman420n/fucns/main/FUCKYOUCUNT.BLUNT", true))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢Build A Boat For Treasure GUI', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/OopssSorry/OopssGui/main/MainOopssGui.lua", true))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢Rolly Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XRoLLu/Rolly_Hub/main/open-source-trash-loader.exe.yeah"))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢Table Hub', function()
+    -- They can't even make configs auto save on GUI, so you gotta config in text manualy :joy_cat::thumbsdown:
+ 
+_BuyFruitSinper = true -- true / false
+_SelectDevil = {"Human-Human: Buddha","Rumble-Rumble","Dragon-Dragon","Soul-Soul","Quake-Quake","String-String","Venom-Venom",'Dark-Dark'}--,"Dragon-Dragon","Soul-Soul","Quake-Quake","String-String","Venom-Venom"
+-- _BestSheetUrl= "https://sheet.best/api/sheets/25f4a337-64c0-4c3b-a403-6c47218098db"
+_Team = "Pirates"
+_FPS_Boost = true
+_AutoFarm = true --"Level , Bone"   "Level"  "Bone"
+_Fullystats = true
+_AutoMeleeWeapon = true
+_Make_Melee = {"Superhuman","Electric Claw","Dargon Talon","Sharkman Karate","Death Step"}
+_AutoRedeem = true
+_RedeemOnLv = 900
+_BuyHaki = true
+_RandomFruit = true
+_StoreFruit = true
+_BringFruit = true
+_BuyBisento = true
+_BuyCommon = true
+_Mastery_Farm = true
+_Mastery_Mode = "Fruit on 2300"
+if game.PlaceId == 2753915549 then -- sea1
+   _Farm_Mode = "Level"
+   _autoSea2 = true
+   _Open_Saber = true
+   _Pole_v1 = true
+elseif game.PlaceId == 4442272183 then -- sea2
+   _AutoMeleeWeapon = true
+   _Farm_Mode = "Level"
+   _autoSea3 = true
+   _Bartilo = true
+   _AutoFlower = true
+   _AutoDarkbeard = true
+   _BuyEctoplasItem = true
+   _BuyKabcha = true
+   _AutoRaid = true
+   _RaidMode = "Awake Skill"-- "Raid Normal" , "Awake Skill"
+   _GetFruit_Method = "FruitInventory + BringFruit + Hop"-- "BringFruit" , "BringFruit + Hop" , "FruitInventory" , "FruitInventory + BringFruit" , "FruitInventory + BringFruit + Hop"
+elseif game.PlaceId == 7449423635 then -- sea3
+   _AutoMeleeWeapon = true
+   _Farm_Mode = game.ReplicatedStorage.Remotes.CommF_:InvokeServer("BuyDragonTalon", true) == 1 and  "DripMama" or "Level , Bone"
+   _BoneTrade = true
+   _AutoRaid = true
+   _RaidMode = "Awake Skill"-- "Raid Normal" , "Awake Skill"
+   _GetFruit_Method = "FruitInventory + BringFruit + Hop"-- "BringFruit" , "BringFruit + Hop" , "FruitInventory" , "FruitInventory + BringFruit" , "FruitInventory + BringFruit + Hop"
+   _BuyEctoplasItem = true
+   _BuyKabcha = true
+   _BuddySword = true
+   _AutoScythe = true
+   _AutoRipIndra = true
+   _Canvander = true
+   _AutoCakePrince = true
+   _EliteHunt = true
+   _Tushita = true
+   _Elite_mode = "Yama"
+end
+_HideUI = true
+ 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AltsegoD/scripts/egoD/TableHubCracked.lua"))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢Astra Hub', function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/0YezNNRh",true))()
+end)
+LeftGroupBox:AddLabel('Build A Boat For Treasure')
 
 -- Library functions
 -- Sets the watermark visibility
