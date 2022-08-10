@@ -5,7 +5,7 @@ local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))
 local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
 local Window = Library:CreateWindow({
 
-    Title = 'Dev V5 Private Script Hack',
+    Title = 'Dev V5 Private Script',
     Center = true, 
     AutoShow = true,
 })
@@ -13,22 +13,29 @@ local Window = Library:CreateWindow({
 local Tabs = {
     Changelogs = Window:AddTab('Changelogs'), 
     PSX = Window:AddTab('PSX'), 
-    MS2 = Window:AddTab('MS2'), 
+    MS2 = Window:AddTab('Mining Sim 2'), 
+    BF = Window:AddTab('BloxFruit'), 
     SH = Window:AddTab('Script Hub'), 
     ['Settings'] = Window:AddTab('Settings'),
 }
 local LeftGroupBox = Tabs.Changelogs:AddLeftGroupbox('Changelogs')
 LeftGroupBox:AddLabel('For All The Scripts!')
-LeftGroupBox:AddLabel('🟢 Working! 🟡 In Development 🔴 Patched!')
-LeftGroupBox:AddLabel('Small Update V4.4.1')
+LeftGroupBox:AddLabel('🟢 Working! 🟠 In Development 🔴 Patched!')
+
+LeftGroupBox:AddLabel('Small Changes V4.4.1')
+LeftGroupBox:AddLabel('Removed Some Scripts')
+LeftGroupBox:AddLabel('Maybe Getting BloxFruit Done Tommorow :(')
+LeftGroupBox:AddLabel('Adding ScriptHub Tommorow YAY!! More Script:Unknown')
+LeftGroupBox:AddLabel('---------------------------------')
+LeftGroupBox:AddLabel('Small Changes V4.4.5')
 LeftGroupBox:AddLabel('(+) Added Zeerox To Universal (Only Arsenal And PF)')
-LeftGroupBox:AddLabel('---------------------------------------------------')
-LeftGroupBox:AddLabel('Mega Huge Update V4.4')
+LeftGroupBox:AddLabel('---------------------------------')
+LeftGroupBox:AddLabel('Huge Changes V4.4')
 LeftGroupBox:AddLabel('(+) Added Bloxfruit 42 + Scripts')
 LeftGroupBox:AddLabel('(+) Revamped Things')
 LeftGroupBox:AddLabel('(+) Released Da Hood')
-LeftGroupBox:AddLabel('----------------------------------------------------')
-LeftGroupBox:AddLabel('Big Update V4.3')
+LeftGroupBox:AddLabel('---------------------------------')
+LeftGroupBox:AddLabel('Big Changes V4.3')
 LeftGroupBox:AddLabel('(+) Added Legends Of Speed')
 LeftGroupBox:AddLabel('(+) Added 7 Scripts To Legends Of Speed')
 LeftGroupBox:AddLabel('(+) Added DaHood!')
@@ -144,6 +151,10 @@ local MyButton = RightGroupBox:AddButton('🟢 Proxo Hub (Common)', function()
     loadstring(game:HttpGet"https://raw.githubusercontent.com/sinnx32/prx/main/Petsim")()
 end)
 MyButton:AddTooltip('Might Removed This Script If Isnt Updating')
+local MyButton = RightGroupBox:AddButton('🟢 Key Board For Mobile (Moving This To ScriptHub)', function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
+end)
+MyButton:AddTooltip('This Is For Mobile Users')
 
 LeftGroupBox:AddLabel('Keybind'):AddKeyPicker('KeyPicker', {
     Default = 'None', -- String as the name of the keybind (MB1, MB2 for mouse buttons)  
@@ -314,6 +325,92 @@ local MyButton = RightGroupBox:AddButton('🟢 Zyrex Hub', function()
 end)
 MyButton:AddTooltip('One Of The Best Scripts')
 
+RightGroupBox:AddLabel('------ Blox Fruit! -------')
+
+local MyButton = RightGroupBox:AddButton('🟢 HoHo Hub', function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Mukuro Hub', function()
+   loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Table Hub', function()
+   -- They can't even make configs auto save on GUI, so you gotta config in text manualy :joy_cat::thumbsdown:
+ 
+_BuyFruitSinper = true -- true / false
+_SelectDevil = {"Human-Human: Buddha","Rumble-Rumble","Dragon-Dragon","Soul-Soul","Quake-Quake","String-String","Venom-Venom",'Dark-Dark'}--,"Dragon-Dragon","Soul-Soul","Quake-Quake","String-String","Venom-Venom"
+-- _BestSheetUrl= "https://sheet.best/api/sheets/25f4a337-64c0-4c3b-a403-6c47218098db"
+_Team = "Pirates"
+_FPS_Boost = true
+_AutoFarm = true --"Level , Bone"   "Level"  "Bone"
+_Fullystats = true
+_AutoMeleeWeapon = true
+_Make_Melee = {"Superhuman","Electric Claw","Dargon Talon","Sharkman Karate","Death Step"}
+_AutoRedeem = true
+_RedeemOnLv = 900
+_BuyHaki = true
+_RandomFruit = true
+_StoreFruit = true
+_BringFruit = true
+_BuyBisento = true
+_BuyCommon = true
+_Mastery_Farm = true
+_Mastery_Mode = "Fruit on 2300"
+if game.PlaceId == 2753915549 then -- sea1
+   _Farm_Mode = "Level"
+   _autoSea2 = true
+   _Open_Saber = true
+   _Pole_v1 = true
+elseif game.PlaceId == 4442272183 then -- sea2
+   _AutoMeleeWeapon = true
+   _Farm_Mode = "Level"
+   _autoSea3 = true
+   _Bartilo = true
+   _AutoFlower = true
+   _AutoDarkbeard = true
+   _BuyEctoplasItem = true
+   _BuyKabcha = true
+   _AutoRaid = true
+   _RaidMode = "Awake Skill"-- "Raid Normal" , "Awake Skill"
+   _GetFruit_Method = "FruitInventory + BringFruit + Hop"-- "BringFruit" , "BringFruit + Hop" , "FruitInventory" , "FruitInventory + BringFruit" , "FruitInventory + BringFruit + Hop"
+elseif game.PlaceId == 7449423635 then -- sea3
+   _AutoMeleeWeapon = true
+   _Farm_Mode = game.ReplicatedStorage.Remotes.CommF_:InvokeServer("BuyDragonTalon", true) == 1 and  "DripMama" or "Level , Bone"
+   _BoneTrade = true
+   _AutoRaid = true
+   _RaidMode = "Awake Skill"-- "Raid Normal" , "Awake Skill"
+   _GetFruit_Method = "FruitInventory + BringFruit + Hop"-- "BringFruit" , "BringFruit + Hop" , "FruitInventory" , "FruitInventory + BringFruit" , "FruitInventory + BringFruit + Hop"
+   _BuyEctoplasItem = true
+   _BuyKabcha = true
+   _BuddySword = true
+   _AutoScythe = true
+   _AutoRipIndra = true
+   _Canvander = true
+   _AutoCakePrince = true
+   _EliteHunt = true
+   _Tushita = true
+   _Elite_mode = "Yama"
+end
+_HideUI = true
+ 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AltsegoD/scripts/egoD/TableHubCracked.lua"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Mid Hub', function()
+    _G.Color = Color3.fromRGB(160, 1, 228)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MIDHUBB/ALL/main/" .. tostring(game.PlaceId) .. ".lua"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+local MyButton = RightGroupBox:AddButton('🟢Project Meow', function()
+    loadstring(game:HttpGet("https://www.scriptblox.com/raw/Project-Meow_421"))()
+end)
+MyButton:AddTooltip('Has Very Op Features')
+
+local LeftGroupBox = Tabs.BF:AddLeftGroupbox('---------- Blox Fruit -----------')
+
+local RightGroupBox = Tabs.BF:AddRightGroupbox('---------- Blox Fruit -----------')
+
 -- Library functions
 -- Sets the watermark visibility
 Library:SetWatermarkVisibility(true)
@@ -328,7 +425,7 @@ Library:OnUnload(function()
 end)
 
 local MenuGroup = Tabs['Settings']:AddLeftGroupbox('Menu')
-MenuGroup:AddButton('UnInject', function() Library:Unload() end)
+MenuGroup:AddButton('Destroy Gui', function() Library:Unload() end)
 MenuGroup:AddLabel('Menu bind'):AddKeyPicker('MenuKeybind', { Default = 'Right Ctrl', NoUI = true, Text = 'Menu keybind' })
 
 Library.ToggleKeybind = Options.MenuKeybind -- Allows you to have a custom keybind for the menu
