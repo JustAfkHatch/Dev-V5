@@ -1,4 +1,35 @@
 -- Dev V5 Project
+local ServerScriptService = game:GetService("ServerScriptService")
+local ChatService = require(ServerScriptService:WaitForChild("ChatServiceRunner"):WaitForChild("ChatService"))
+local Players = game:GetService("Players")
+
+local Owner = {'JerrysonIsmad'} --Change YOUR NAME to your username
+
+ChatService.SpeakerAdded:Connect(function(PlrName)
+ local Speaker = ChatService:GetSpeaker(PlrName)
+ for _, v in pairs(Owner) do
+  if Players[PlrName].Name == v then
+   Speaker:SetExtraData('Tags', {{TagText = "Dev Developer", TagColor = Color3.fromRGB(255,255,255)}}) --Change the 
+  end
+ end
+end)
+
+elseif
+local ServerScriptService = game:GetService("ServerScriptService")
+local ChatService = require(ServerScriptService:WaitForChild("ChatServiceRunner"):WaitForChild("ChatService"))
+local Players = game:GetService("Players")
+
+local Owner = {'JerrysonIsmad'} --Change YOUR NAME to your username
+
+ChatService.SpeakerAdded:Connect(function(PlrName)
+ local Speaker = ChatService:GetSpeaker(PlrName)
+ for _, v in pairs(Owner) do
+  if Players[PlrName].Name == v then
+   Speaker:SetExtraData('Tags', {{TagText = "Dev Developer", TagColor = Color3.fromRGB(255,255,255)}}) --Change the 
+  end
+ end
+end)
+
 local repo = 'https://raw.githubusercontent.com/wally-rblx/LinoriaLib/main/'
 
 local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
@@ -28,8 +59,8 @@ LeftGroupBox:AddLabel('---------------------------------')
 LeftGroupBox:AddLabel('Small Changes V5')
 LeftGroupBox:AddLabel('(-) Updates Are Gonna Decreased by 70%')
 LeftGroupBox:AddLabel('(+) Revamped A Bunch Of Things')
-LeftGroupBox:AddLabel('(+) Getting EveryThing Finished First')
-LeftGroupBox:AddLabel('(+) Adding More Stuff To ScriptHub Tommorow')
+LeftGroupBox:AddLabel('(+) New Tag Thingy')
+LeftGroupBox:AddLabel('(+) Adding Scripts To ScriptHub Tommorow')
 
 local LeftGroupBox = Tabs.PSX:AddLeftGroupbox('------- Pet Simulator X ---------')
 local MyButton = LeftGroupBox:AddButton('🟢 TR1V5 Software (Exclusive)', function()
