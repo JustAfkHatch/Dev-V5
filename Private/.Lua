@@ -19,7 +19,7 @@ local ServerScriptService = game:GetService("ServerScriptService")
 local ChatService = require(ServerScriptService:WaitForChild("ChatServiceRunner"):WaitForChild("ChatService"))
 local Players = game:GetService("Players")
 
-local Owner = {'JerrysonIsmad'} --Change YOUR NAME to your username
+local Owner = {'Robloxbaconsqaud'} --Change YOUR NAME to your username
 
 ChatService.SpeakerAdded:Connect(function(PlrName)
  local Speaker = ChatService:GetSpeaker(PlrName)
