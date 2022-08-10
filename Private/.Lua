@@ -13,87 +13,95 @@ local Window = Library:CreateWindow({
 local Tabs = {
     -- Creates a new tab titled Main
     Changelogs = Window:AddTab('Changelogs'), 
-    Main = Window:AddTab('Main'), 
-    ['General'] = Window:AddTab('General'),
+    PSX = Window:AddTab('Pet Simulator X'), 
+    ['Settings'] = Window:AddTab('Settings'),
 }
 local LeftGroupBox = Tabs.Changelogs:AddLeftGroupbox('Changelogs')
-LeftGroupBox:AddLabel('Hi New UI LIB')
+LeftGroupBox:AddLabel('Small Update V4.4.1')
+LeftGroupBox:AddLabel('(+) Added Zeerox To Universal (Only Arsenal And PF)')
+LeftGroupBox:AddLabel('---------------------------------------------------')
+LeftGroupBox:AddLabel('Mega Huge Update V4.4')
+LeftGroupBox:AddLabel('(+) Added Bloxfruit 42 + Scripts')
+LeftGroupBox:AddLabel('(+) Revamped Things')
+LeftGroupBox:AddLabel('(+) Released Da Hood')
+LeftGroupBox:AddLabel('----------------------------------------------------')
+LeftGroupBox:AddLabel('Big Update V4.3')
+LeftGroupBox:AddLabel('(+) Added Legends Of Speed')
+LeftGroupBox:AddLabel('(+) Added 7 Scripts To Legends Of Speed')
+LeftGroupBox:AddLabel('(+) Added DaHood!')
+LeftGroupBox:AddLabel('(+) Added 15 scripts to DaHood')
 
-local LeftGroupBox = Tabs.Main:AddLeftGroupbox('Pet Sim X')
+local LeftGroupBox = Tabs.PSX:AddLeftGroupbox('Pet Sim X')
+local MyButton = LeftGroupBox:AddButton('🟢 TR1V5 Software (Exclusive)', function()
+    
+end)
+MyButton:AddTooltip('This is a button')
+local MyButton = LeftGroupBox:AddButton('🟢 Zeerox Hub (Exclusive)', function()
+    
+end)
+MyButton:AddTooltip('This is a button')
+local MyButton = LeftGroupBox:AddButton('🟢 Vestra Hub V5 (Exclusive)', function()
+    
+end)
+MyButton:AddTooltip('This is a button')
 local MyButton = LeftGroupBox:AddButton('', function()
     
 end)
 MyButton:AddTooltip('This is a button')
 local MyButton = LeftGroupBox:AddButton('', function()
-    print('You clicked a button!')
+    
 end)
 MyButton:AddTooltip('This is a button')
 local MyButton = LeftGroupBox:AddButton('', function()
-    print('You clicked a button!')
+    
 end)
 MyButton:AddTooltip('This is a button')
 local MyButton = LeftGroupBox:AddButton('', function()
-    print('You clicked a button!')
+    
 end)
 MyButton:AddTooltip('This is a button')
 local MyButton = LeftGroupBox:AddButton('', function()
-    print('You clicked a button!')
+    
 end)
 MyButton:AddTooltip('This is a button')
 local MyButton = LeftGroupBox:AddButton('', function()
-    print('You clicked a button!')
+    
 end)
 MyButton:AddTooltip('This is a button')
 local MyButton = LeftGroupBox:AddButton('', function()
-    print('You clicked a button!')
+    
 end)
 MyButton:AddTooltip('This is a button')
 local MyButton = LeftGroupBox:AddButton('', function()
-    print('You clicked a button!')
+    
 end)
 MyButton:AddTooltip('This is a button')
 local MyButton = LeftGroupBox:AddButton('', function()
-    print('You clicked a button!')
+    
 end)
 MyButton:AddTooltip('This is a button')
 local MyButton = LeftGroupBox:AddButton('', function()
-    print('You clicked a button!')
+    
 end)
 MyButton:AddTooltip('This is a button')
 local MyButton = LeftGroupBox:AddButton('', function()
-    print('You clicked a button!')
+    
 end)
 MyButton:AddTooltip('This is a button')
 local MyButton = LeftGroupBox:AddButton('', function()
-    print('You clicked a button!')
+    
 end)
 MyButton:AddTooltip('This is a button')
 local MyButton = LeftGroupBox:AddButton('', function()
-    print('You clicked a button!')
+    
 end)
 MyButton:AddTooltip('This is a button')
 local MyButton = LeftGroupBox:AddButton('', function()
-    print('You clicked a button!')
+    
 end)
 MyButton:AddTooltip('This is a button')
 local MyButton = LeftGroupBox:AddButton('', function()
-    print('You clicked a button!')
-end)
-MyButton:AddTooltip('This is a button')
-local MyButton = LeftGroupBox:AddButton('', function()
-    print('You clicked a button!')
-end)
-MyButton:AddTooltip('This is a button')
-local MyButton = LeftGroupBox:AddButton('', function()
-    print('You clicked a button!')
-end)
-MyButton:AddTooltip('This is a button')
-local MyButton = LeftGroupBox:AddButton('', function()
-    print('You clicked a button!')
-end)
-MyButton:AddTooltip('This is a button')
-local MyButton = LeftGroupBox:AddButton('', function()
-    print('You clicked a button!')
+    
 end)
 
 LeftGroupBox:AddLabel('Keybind'):AddKeyPicker('KeyPicker', {
@@ -136,7 +144,7 @@ Library:OnUnload(function()
     Library.Unloaded = true
 end)
 
-local MenuGroup = Tabs['General']:AddLeftGroupbox('Menu')
+local MenuGroup = Tabs['Settings']:AddLeftGroupbox('Menu')
 MenuGroup:AddButton('UnInject', function() Library:Unload() end)
 MenuGroup:AddLabel('Menu bind'):AddKeyPicker('MenuKeybind', { Default = 'Right Ctrl', NoUI = true, Text = 'Menu keybind' })
 
@@ -152,6 +160,6 @@ SaveManager:SetIgnoreIndexes({ 'MenuKeybind' })
 ThemeManager:SetFolder('MyScriptHub')
 SaveManager:SetFolder('MyScriptHub/specific-game')
 
-SaveManager:BuildConfigSection(Tabs['General']) 
+SaveManager:BuildConfigSection(Tabs['Settings']) 
 
-ThemeManager:ApplyToTab(Tabs['General'])
+ThemeManager:ApplyToTab(Tabs['Settings'])
