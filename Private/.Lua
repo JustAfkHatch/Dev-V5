@@ -155,6 +155,10 @@ local MyButton = RightGroupBox:AddButton('🟢 Key Board For Mobile (Moving This
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
 end)
 MyButton:AddTooltip('This Is For Mobile Users')
+local MyButton = RightGroupBox:AddButton('🟢 JSBR (Moving This To ScriptHub)', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZXC09321/my-script/main/Script.txt",true))()
+end)
+MyButton:AddTooltip('This Is For Mobile Users')
 
 LeftGroupBox:AddLabel('Keybind'):AddKeyPicker('KeyPicker', {
     Default = 'None', -- String as the name of the keybind (MB1, MB2 for mouse buttons)  
