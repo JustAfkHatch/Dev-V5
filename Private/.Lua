@@ -6,7 +6,7 @@ local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))
 local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
 local Window = Library:CreateWindow({
 
-    Title = 'Dev V5 Private Script',
+    Title = 'Dev V5 Premium!',
     Center = true, 
     AutoShow = true,
 })
