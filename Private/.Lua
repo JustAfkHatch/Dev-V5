@@ -9,7 +9,7 @@ ChatService.SpeakerAdded:Connect(function(PlrName)
  local Speaker = ChatService:GetSpeaker(PlrName)
  for _, v in pairs(Owner) do
   if Players[PlrName].Name == v then
-   Speaker:SetExtraData('Tags', {{TagText = "Dev Developer", TagColor = Color3.fromRGB(255,255,255)}}) --Change the 
+   Speaker:SetExtraData('Tags', {{TagText = "Dev Developer", TagColor = Color3.fromRGB(91, 0, 1)}}) --Change the 
   end
  end
 end)
