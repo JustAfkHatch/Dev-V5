@@ -12,12 +12,14 @@ local Window = Library:CreateWindow({
 })
 
 local Tabs = {
-    Changelogs = Window:AddTab('Changelogs'), 
+    Changelogs = Window:AddTab('Changes'), 
     PSX = Window:AddTab('PSX'), 
-    MS2 = Window:AddTab('Mining Sim 2'), 
+    Bedwars = Window:AddTab('Bedwars'), 
+    MS2 = Window:AddTab('MS2'), 
     BF = Window:AddTab('BloxFruit'), 
-    SH = Window:AddTab('Script Hub'), 
-    ['Settings'] = Window:AddTab('Settings'),
+    SH = Window:AddTab('ScriptHub'),
+    ScriptHub = Window:AddTab('More'), 
+    ['Settings'] = Window:AddTab('UI Settings'),
 }
 local LeftGroupBox = Tabs.Changelogs:AddLeftGroupbox('Changelogs')
 LeftGroupBox:AddLabel('For All The Scripts!')
@@ -27,7 +29,7 @@ LeftGroupBox:AddLabel('Small Changes V4.4.1')
 LeftGroupBox:AddLabel('(-) Removed Some Scripts From Sections')
 LeftGroupBox:AddLabel('(+) Revamped A Bunch Of Things')
 LeftGroupBox:AddLabel('(+) Got Done With BloxFruit Scripts')
-LeftGroupBox:AddLabel('(+) Adding ScriptHub Tommorow')
+LeftGroupBox:AddLabel('(+) Adding More ScriptHub Tommorow')
 
 local LeftGroupBox = Tabs.PSX:AddLeftGroupbox('------- Pet Simulator X ---------')
 local MyButton = LeftGroupBox:AddButton('🟢 TR1V5 Software (Exclusive)', function()
@@ -165,6 +167,27 @@ task.spawn(function()
         if Library.Unloaded then break end
     end
 end)
+
+local LeftGroupBox = Tabs.Bedwars:AddLeftGroupbox('------- Bedwars ---------')
+local MyButton = LeftGroupBox:AddButton('🟢 Inf Jump', function()
+            local InfiniteJumpEnabled = true
+    game:GetService("UserInputService").JumpRequest:connect(function()
+            if InfiniteJumpEnabled then
+            game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+        end
+    end)
+end)
+local MyButton = LeftGroupBox:AddButton('🟢 Sape', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/vodxn/sape/main/Initiate.lua"))()
+end)
+local MyButton = LeftGroupBox:AddButton('🟢 Vape', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+local MyButton = LeftGroupBox:AddButton('🟢 EngoWare', function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/joeengo/engoware/main/Main.lua"))()
+end)
+
+local RightGroupBox = Tabs.Bedwars:AddRightGroupbox('Script Coming Soon!')
 
 local LeftGroupBox = Tabs.MS2:AddLeftGroupbox('------- Mining Simulator 2 ------')
 local MyButton = LeftGroupBox:AddButton('🟢 Zeerox', function()
@@ -711,14 +734,33 @@ end)
 local MyButton = RightGroupBox:AddButton('🟢Astra Hub', function()
     loadstring(game:HttpGet("https://pastebin.com/raw/0YezNNRh",true))()
 end)
-LeftGroupBox:AddLabel('Build A Boat For Treasure')
+
+RightGroupBox:AddLabel('-------- Murder Mystery 2 -------')
+local MyButton = RightGroupBox:AddButton('🟢Eclipse Hub', function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/EclipseMM2', true))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢TR1V5 Software', function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/TR1V5/TR1V5-Software-V4/main/Main"))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢XennyWare', function()
+    repeat wait() until game.Players.LocalPlayer.Character
+    url = "https://raw.githubusercontent.com/xennyy/Xenny-Ware/main/loader.lua"
+    loadstring(game:HttpGet(url))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢Vynixus', function()
+    loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+end)
+
+local LeftGroupBox = Tabs.ScriptHub:AddLeftGroupbox('------------ Break In -----------')
+
+local RightGroupBox = Tabs.ScriptHub:AddRightGroupbox('------------ Da Hood ------------')
 
 -- Library functions
 -- Sets the watermark visibility
 Library:SetWatermarkVisibility(true)
 
 -- Sets the watermark text
-Library:SetWatermark('Dev V5 Winning :O--')
+Library:SetWatermark('Dev V5 Private') -- Set WaterMark To Public If V5
 
 Library.KeybindFrame.Visible = true; -- todo: add a function for this
 
