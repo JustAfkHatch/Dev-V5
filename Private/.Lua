@@ -1,11 +1,11 @@
 -- Dev V5 Project
 
 wait(0.55)
-game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Dev V5 Premium Version = (V5)", Icon = "rbxassetid://10470552407", Duration = 5})
+game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Dev V5 Premium Version = (V5)", Icon = "rbxassetid://10550885987", Duration = 5})
 wait(0.35)
-game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Version Is Up To Date (V5)", Icon = "rbxassetid://10470552407", Duration = 5})
+game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Version Is Up To Date (V5)", Icon = "rbxassetid://10550885987", Duration = 5})
 wait(0.15)
-game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Dev V5 Premium Finished Loading!", Icon = "rbxassetid://10470552407", Duration = 5})
+game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Dev V5 Premium Finished Loading!", Icon = "rbxassetid://10550885987", Duration = 5})
 
 local repo = 'https://raw.githubusercontent.com/wally-rblx/LinoriaLib/main/'
 
@@ -14,7 +14,7 @@ local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))
 local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
 local Window = Library:CreateWindow({
 
-    Title = 'Dev V5 Premium!',
+    Title = 'Neonz V5 Premium!',
     Center = true, 
     AutoShow = true,
 })
@@ -37,7 +37,7 @@ LeftGroupBox:AddLabel('---------------------------------')
 LeftGroupBox:AddLabel('Small Changes V5')
 LeftGroupBox:AddLabel('(-) Updates Are Gonna Decreased by 70%')
 LeftGroupBox:AddLabel('(+) Revamped UI And Shit')
-LeftGroupBox:AddLabel('(+) Added Notification')
+LeftGroupBox:AddLabel('(+) Added Notification + New Image')
 
 local LeftGroupBox = Tabs.PSX:AddLeftGroupbox('------- Pet Simulator X ---------')
 local MyButton = LeftGroupBox:AddButton('🟢HoHo Hub', function()
