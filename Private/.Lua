@@ -1,4 +1,4 @@
--- Dev V5 Project
+-- DarkWare V5 Project
 
 wait(0.55)
 game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Dev V5 Premium Version = (V5)", Icon = "rbxassetid://10550885987", Duration = 5})
@@ -14,7 +14,7 @@ local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))
 local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
 local Window = Library:CreateWindow({
 
-    Title = 'Neonz V5 Premium!',
+    Title = 'DarkWare V5 Premium!',
     Center = true, 
     AutoShow = true,
 })
@@ -859,7 +859,7 @@ end)
 Library:SetWatermarkVisibility(true)
 
 -- Sets the watermark text
-Library:SetWatermark('Dev V5 Private') -- Set WaterMark To Public If V5
+Library:SetWatermark('Darkware V5 Premium') -- Set WaterMark To Public If V5
 
 Library.KeybindFrame.Visible = true; -- todo: add a function for this
 
