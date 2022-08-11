@@ -27,17 +27,17 @@ local Tabs = {
     MS2 = Window:AddTab('MS2'), 
     BF = Window:AddTab('BloxFruit'), 
     SH = Window:AddTab('ScriptHub'),
-    ScriptHub = Window:AddTab('More'), 
-    ['Settings'] = Window:AddTab('UI Settings'),
+    ScriptHub = Window:AddTab('Scripts'), 
+    ['Settings'] = Window:AddTab('Settings'),
 }
 local LeftGroupBox = Tabs.Changelogs:AddLeftGroupbox('Changelogs')
 LeftGroupBox:AddLabel('For All The Scripts!')
 LeftGroupBox:AddLabel('🟢 Working! 🟠 In Development 🔴 Patched!')
 LeftGroupBox:AddLabel('---------------------------------')
 LeftGroupBox:AddLabel('Small Changes V5')
-LeftGroupBox:AddLabel('(-) Adding UI Gone After Executing a Script (All)')
+LeftGroupBox:AddLabel('(+) Adding UI Gone After Executing a Script (All)')
 LeftGroupBox:AddLabel('(+) Made UI Gone After Executing a Script (PSX Only)')
-LeftGroupBox:AddLabel('(+) Adding New Notification Soon!')
+LeftGroupBox:AddLabel('(+) Making out with Leroy Thao tommorow')
 
 local LeftGroupBox = Tabs.PSX:AddLeftGroupbox('------- Pet Simulator X ---------')
 local MyButton = LeftGroupBox:AddButton('🟢 TR1V5 Software', function()
