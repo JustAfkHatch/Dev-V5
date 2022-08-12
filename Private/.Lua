@@ -58,7 +58,11 @@
     LeftGroupBox:AddLabel('(+) Adding UI Gone After Executing a Script (All)')
     LeftGroupBox:AddLabel('(+) Made UI Gone After Executing a Script (PSX,Bedwars)')
     LeftGroupBox:AddLabel('(+) Also Made More Notification When You Execute The script (PSX,Bedwars)')
-    LeftGroupBox:AddLabel('(+) Added Discord My Server,Its At (Universal aka ScriptHub)')
+    LeftGroupBox:AddLabel('(+) (Added Discord My Server Below This)')
+    local MyButton = LeftGroupBox:AddButton('My Discord Server', function()
+        game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Paste My Discord Server Into your Browser!", Icon = "rbxassetid://10470552407", Duration = 5})
+        setclipboard("https://discord.gg/kVVgyNNy")
+    end)
 
     local LeftGroupBox = Tabs.PSX:AddLeftGroupbox('------- Pet Simulator X ---------')
     local MyButton = LeftGroupBox:AddButton('🟢 TR1V5 Software', function()
