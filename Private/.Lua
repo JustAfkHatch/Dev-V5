@@ -1,11 +1,29 @@
 -- DarkWare V5 Project
 
-wait(0.55)
-game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Dev V5 Premium Version = (V5)", Icon = "rbxassetid://10550885987", Duration = 5})
-wait(0.35)
-game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Version Is Up To Date (V5)", Icon = "rbxassetid://10550885987", Duration = 5})
-wait(0.15)
-game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Dev V5 Premium Finished Loading!", Icon = "rbxassetid://10550885987", Duration = 5})
+wait(1.2)
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Notification";
+ Text = "Dev V5 Premium Version = (V5.1.1)";
+ Icon = "rbxassetid://10550885987";
+ Duration = 10;
+ Button1 = "Close";
+})
+wait(0.8)
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Notification";
+ Text = "Version Is Up To Date";
+ Icon = "rbxassetid://10550885987";
+ Duration = 11;
+ Button1 = "Close";
+})
+wait(0.4)
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Notification";
+ Text = "Finished Loading Darkware Premium";
+ Icon = "rbxassetid://10550885987";
+ Duration = 12;
+ Button1 = "Close";
+})
 
 local repo = 'https://raw.githubusercontent.com/wally-rblx/LinoriaLib/main/'
 
@@ -32,9 +50,11 @@ local Tabs = {
 }
 local LeftGroupBox = Tabs.Changelogs:AddLeftGroupbox('Changelogs')
 LeftGroupBox:AddLabel('For All The Scripts!')
-LeftGroupBox:AddLabel('🟢 Working! 🟠 In Development 🔴 Patched!')
+LeftGroupBox:AddLabel('🟢 Working! 🟡 In Development 🔴 Patched!')
 LeftGroupBox:AddLabel('---------------------------------')
 LeftGroupBox:AddLabel('Small Changes V5')
+LeftGroupBox:AddLabel('(+) New Notification and Premium Has 75% Of Updating :o')
+LeftGroupBox:AddLabel('(+) Non Paid Version Has 25% Of Updating :(')
 LeftGroupBox:AddLabel('(+) Adding UI Gone After Executing a Script (All)')
 LeftGroupBox:AddLabel('(+) Made UI Gone After Executing a Script (PSX,Bedwars)')
 LeftGroupBox:AddLabel('(+) Also Made More Notification When You Execute The script (PSX,Bedwars)')
@@ -251,7 +271,9 @@ task.spawn(function()
     end
 end)
 
-local LeftGroupBox = Tabs.Bedwars:AddLeftGroupbox('------- Bedwars ---------')
+local RightGroupBox = Tabs.PSX:AddRightGroupbox('------------- Soon --------------')
+
+local LeftGroupBox = Tabs.Bedwars:AddLeftGroupbox('------------ Bedwars ------------')
 
 local MyButton = LeftGroupBox:AddButton('🟢 Sape', function()
 		Library:Unload()
@@ -260,7 +282,7 @@ local MyButton = LeftGroupBox:AddButton('🟢 Sape', function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/vodxn/sape/main/Initiate.lua"))()
 end)
 MyButton2:AddTooltip('Has the Same features as Vape But It had Multi Aura And Projectile Exploit Before Vape!')
-local MyButton = LeftGroupBox:AddButton('🟢 Vape', function()
+local MyButton2 = MyButton:AddButton('🟢 Vape', function()
 		Library:Unload()
 		wait(0.70)
 	game.StarterGui:SetCore("SendNotification", {Title = "Notification", Text = "Executing Vape!", Icon = "rbxassetid://10550885987", Duration = 5})
@@ -283,7 +305,41 @@ local MyButton2 = MyButton:AddButton('🟢 EngoWare', function()
 end)
 MyButton:AddTooltip('Still Needs More Update to be good as Vape!')
 
-local RightGroupBox = Tabs.Bedwars:AddRightGroupbox('Script Coming Soon!')
+local RightGroupBox = Tabs.Bedwars:AddRightGroupbox('------------ JailBreak ----------')
+local MyButton = RightGroupBox:AddButton('🟢Vynixus', function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Script.lua"))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢AutoFarm', function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))();
+end)
+local MyButton = RightGroupBox:AddButton('🟢Diamond Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxiYT/Diamond/main/JailBreak"))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢Weiny', function()
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/weiny-ez/w-main/main/jailbreak.lua'))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢Project Evo V2', function()
+     loadstring(game:HttpGet("https://projectevo.xyz/script/loader.lua"))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢TR1V5 Software', function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/TR1V5/TR1V5-Software-V4/main/Main"))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢Chaos Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xChaoticVoid/Chaos-Hub-v1/main/ChaosHub.lua"))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢Vg Hub', function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢Blox Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxiYT/BloxHubFixed/main/MainCode2"))()
+end)
+MyButton:AddTooltip('Has Key System')
+local MyButton = RightGroupBox:AddButton('🟢Cheesy Hub', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CheeseyMine/CheeseyHub/main/CheeseyHubV6"))()
+end)
+local MyButton = RightGroupBox:AddButton('🟢Monkey', function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"))()
+end)
 
 local LeftGroupBox = Tabs.MS2:AddLeftGroupbox('------- Mining Simulator 2 ------')
 local MyButton = LeftGroupBox:AddButton('🟢 Zeerox', function()
@@ -885,41 +941,6 @@ local MyButton = LeftGroupBox:AddButton('🟢Orange Gui', function()
 end)
 local MyButton = LeftGroupBox:AddButton('🟢Red Gui', function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Nikita365/Break-In-Story-/main/Break%20In%20Story%20Hub"))()
-end)
-LeftGroupBox:AddLabel('------------ JailBreak ----------')
-local MyButton = LeftGroupBox:AddButton('🟢Vynixus', function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Script.lua"))()
-end)
-local MyButton = LeftGroupBox:AddButton('🟢AutoFarm', function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))();
-end)
-local MyButton = LeftGroupBox:AddButton('🟢Diamond Hub', function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxiYT/Diamond/main/JailBreak"))()
-end)
-local MyButton = LeftGroupBox:AddButton('🟢Weiny', function()
-     loadstring(game:HttpGet('https://raw.githubusercontent.com/weiny-ez/w-main/main/jailbreak.lua'))()
-end)
-local MyButton = LeftGroupBox:AddButton('🟢Project Evo V2', function()
-     loadstring(game:HttpGet("https://projectevo.xyz/script/loader.lua"))()
-end)
-local MyButton = LeftGroupBox:AddButton('🟢TR1V5 Software', function()
-    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/TR1V5/TR1V5-Software-V4/main/Main"))()
-end)
-local MyButton = LeftGroupBox:AddButton('🟢Chaos Hub', function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/xChaoticVoid/Chaos-Hub-v1/main/ChaosHub.lua"))()
-end)
-local MyButton = LeftGroupBox:AddButton('🟢Vg Hub', function()
-      loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
-end)
-local MyButton = LeftGroupBox:AddButton('🟢Blox Hub', function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxiYT/BloxHubFixed/main/MainCode2"))()
-end)
-MyButton:AddTooltip('Has Key System')
-local MyButton = LeftGroupBox:AddButton('🟢Cheesy Hub', function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/CheeseyMine/CheeseyHub/main/CheeseyHubV6"))()
-end)
-local MyButton = LeftGroupBox:AddButton('🟢Monkey', function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"))()
 end)
 
 local RightGroupBox = Tabs.ScriptHub:AddRightGroupbox('------------ Da Hood ------------')
